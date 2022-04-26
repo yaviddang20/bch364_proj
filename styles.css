@@ -98,7 +98,8 @@ h2 {
 /* Abstract */
 
 #abstract-background {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #fbe7c6;
 }
