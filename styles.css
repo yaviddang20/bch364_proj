@@ -70,7 +70,7 @@ body {
   background-color: #ffaebc;
 }
 
-#main-container a {
+#main-container > a {
   cursor: pointer;
   border: solid white 2px;
   position: relative;
@@ -93,6 +93,11 @@ h2 {
   transform: translate(-50%, -100%);
   font-size: 2em;
   font-family: "Noto Sans", "sans-serif";
+}
+
+#ack {
+  all: unset;
+  cursor: pointer;
 }
 
 /* Abstract */
@@ -153,6 +158,11 @@ h2 {
   margin: auto;
   margin-top: 50px;
   height: 75px;
+}
+
+#arrow-container:hover {
+  transition: .5s;
+  transform: translateY(-10px);
 }
 
 p {
