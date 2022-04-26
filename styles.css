@@ -268,3 +268,23 @@ p.caption {
 .figure.thinner {
   width: 40%;
 }
+
+/* 3D */
+
+.mol-container {
+  width: 60%;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+p.mol-para {
+  font-size: 18px;
+  text-align: center;
+}
+
+h3.mol-para {
+  margin-top: 50px;
+  font-size:32px;
+  text-align: center;
+}
