@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods</title>
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+  <main id="swup" class="transition-fade">
+    <body>
+      <div class="non-home-back" id="methods-background">
+        <div id="header-container">
+          <h1>Methods</h1>
+        </div>
+        <div id="text-content">
+          <div class="figure wider">
+            <img src="/images/flow.png" alt="workflow" />
+            <p>
+              Complete workflow shown again. The first two steps have already
+              been completed in previous experiments. We use the data from these
+              experiments to predict potential eukaryotic protein complexes.
+            </p>
+          </div>
+          <p>
+            CFMS results were gathered from previous experiments. CFMS was
+            performed on 32 eukaryote species that span the major eukaryote
+            clades. The elution profile for a single KOG group reflects 149
+            different experiments, with several whole-proteome extractions and
+            separations for most eukaryotic species chosen. The elution profiles
+            are then clustered based on their similarity into multiple clusters
+            of different hierarchy, with very similar to identical elution
+            profiles being in the most exclusive clusters. KOG groups with
+            not-so-similar elution profiles may be in the same clusters that are
+            very broad and inclusive, but they would not be in the same clusters
+            for clusters that are smaller and more exclusive.
+          </p>
+          <div class="figure">
+            <img src="/images/neg-example.png" alt="negative elution data" />
+            <p>Negative elution data from CFMS.</p>
+          </div>
+          <div class="figure">
+            <img
+              src="/images/positive-example.png"
+              alt="negative elution data"
+            />
+            <p>Positive elution data from CFMS.</p>
+          </div>
+          <p>
+            KOG groups in almost identical clusters were grouped together and
+            predicted to be as part of a complex, as they have very similar
+            elution profiles. In order to map the KOG groups to our eukaryotic
+            organisms of interest, we first downloaded the organism proteomes
+            from UniProt. These proteomes contain the sequences, gene ID, and
+            the UniProt ID for each protein. The UniProt IDs were mapped to
+            eggNOG’s KOG IDs and merged with the clustering data to obtain a new
+            dataset. This new dataset contains the KOG groups that are predicted
+            to form complexes. Each row of the new dataset now also contains the
+            eukaryote of interest’s sequence and gene ID that corresponds to
+            each KOG ID. Knowing the sequence for each KOG group for a certain
+            eukaryote organism allows us to input the sequence into AlphaFold
+            and the gene ID can identify which gene of the target eukaryote is
+            predicted to form the complex.
+          </p>
+          <div class="figure">
+            <img src="/images/clustering.png" alt="clustering" />
+            <p>
+              Subset of clustering data from the clustering csv file. Each
+              cluster is assigned a number, with more inclusive clusters having
+              lower numbers and more exclusive, smaller clusters having higher numbers. KOG groups
+              with similar elution profiles are more likely to be in the same smaller clusters and have more identical cuts.
+            </p>
+          </div>
+          <p>
+            AlphaFold has been shown to predict protein structures from
+            sequences with high accuracy using computational prediction tools.
+            While AlphaFold was originally intended to be used with monomers,
+            some independent parties have developed tools to facilitate the use
+            of AlphaFold for multimers. Here, AlphaFold Colab was used to
+            predict the structure of protein complexes. Due to time and the
+            sequence-length constraints of Colab, we have only put in a small
+            subset of potential predicted dimers into AlphaFold.
+          </p>
+          <div class="figure">
+            <img src="/images/logos.png" alt="tools" />
+            <p>
+              Tools used in this project: UniProt was used to gather proteome
+              sequence data, eggNOG was used to acquire KOG IDs, DeepMind's
+              Alphafold was used to predict protein structure based on sequence,
+              and Colab was used to run AlphaFold.
+            </p>
+          </div>
+        </div>
+        <div id="arrow-container">
+          <a href="/index.html"><i class="arrow up"></i></a>
+        </div>
+      </div>
+    </body>
+  </main>
+</html>

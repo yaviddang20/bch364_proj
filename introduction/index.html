@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+  <main id="swup" class="transition-fade">
+    <body>
+      <div class="non-home-back" id="intro-background">
+        <div id="header-container">
+          <h1>Introduction</h1>
+        </div>
+        <div id="text-content">
+          <div class="figure">
+            <img src="/images/leca.png" alt="LECA phylogenetic tree" />
+            <p>
+              Phylogenetic tree representing the supergroups that branch from
+              the last eukaryotic common ancestor (LECA).
+            </p>
+          </div>
+          <p>
+            Deeply conserved eukaryotic proteins are proteins that diverged
+            early in the eukaryote lineage and remain present in most or all
+            children lineages. These proteins are of high interest due to their
+            ability to maintain a relatively constant function through billions
+            of years of evolution. While most well-conserved proteins in
+            eukaryotes are now known, there remains the question on which
+            protein complexes are deeply conserved in eukaryotes. Knowledge of
+            these complexes can give us a better understanding of how protein
+            interactions have changed or remained the same throughout the
+            evolution of eukaryotes.
+          </p>
+          <p>
+            KOG groups are orthologous groups that span the entirety of the
+            eukaryotic clade and are specific to eukaryotes. CFMS was performed
+            in previous experiments using 32 different eukaryotic species,
+            producing elution profiles for each KOG group. The elution profiles
+            are used to predict which KOG groups may form complexes, as elution
+            profiles that are very similar or identical indicate that the
+            corresponding KOGs have very similar characteristics and are likely
+            to form complexes. With this knowledge, we can map the KOG groups to
+            a eukaryotic proteome and, using AlphaFold, predict the feasibility
+            of the complex structure in that eukaryote. We then expanded this to
+            include eukaryotic organisms spanning several different clades to
+            determine how well these complexes might be conserved across
+            different eukaryote lineages. For this project, we focused on a
+            subset of eukaryotes, two unicellular eukaryotes (yeast and algae)
+            and a multicellular eukaryote (mouse).
+          </p>
+          <div class="figure wider">
+            <img src="/images/flow.png" alt="workflow" />
+            <p>
+              Complete workflow. The first two steps have already been completed
+              in previous experiments. We use the data from these experiments to
+              predict potential eukaryotic protein complexes.
+            </p>
+          </div>
+        </div>
+        <div id="arrow-container">
+          <a href="/index.html"><i class="arrow up"></i></a>
+        </div>
+      </div>
+    </body>
+  </main>
+</html>

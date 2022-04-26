@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+  <main id="swup" class="transition-fade">
+    <body>
+      <div class="non-home-back" id="results-background">
+        <div id="header-container">
+          <h1>Results</h1>
+        </div>
+        <div id="text-content">
+          <h2>Yeast (Saccharomyces cerevisiae)</h2>
+          <div class="protein-results">
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\yeast\prediction_KOG2592_TMS1KOG2864_RFT1_3659f\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\yeast\prediction_KOG2592_TMS1KOG2864_RFT1_3659f\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\yeast\prediction_KOG3433_MND1_KOG4603_HOP2_535bb\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\yeast\prediction_KOG3433_MND1_KOG4603_HOP2_535bb\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="caption">Top: (KOG2592) TMS1 and (KOG2864) RFT1</p>
+          <p class="caption">Bottom: (KOG3433) MND1 and (KOG4603) HOP2</p>
+          <h2>Mouse (Mus musculus)</h2>
+          <div class="protein-results">
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\mouse\prediction_KOG2497_Eef2kmtFam86Fam86a_KOG2837_KinBtcdKin17_9ac55\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\mouse\prediction_KOG2497_Eef2kmtFam86Fam86a_KOG2837_KinBtcdKin17_9ac55\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\mouse\prediction_KOG3433_Mnd1_KOG4603_Psmc3ipHop2Tbpip_f2381\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\mouse\prediction_KOG3433_Mnd1_KOG4603_Psmc3ipHop2Tbpip_f2381\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="caption">Top: (KOG2497) Eef2 and (KOG2837) RFT1</p>
+          <p class="caption">Bottom: (KOG3433) MND1 and (KOG4603) Kin17</p>
+          <h2>Algae (Chlamydomonas reinhardtii)</h2>
+          <div class="protein-results">
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\algae\prediction_KOG3479_TIM9CHLRE_01g033400v5CHLREDRAFT_56449_KOG3480_TIM10CHLRE_12g514900v5CHLREDRAFT_140499_4ebee\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\algae\prediction_KOG3479_TIM9CHLRE_01g033400v5CHLREDRAFT_56449_KOG3480_TIM10CHLRE_12g514900v5CHLREDRAFT_140499_4ebee\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <video autoplay loop muted>
+                <source
+                  src="/proteins\algae\prediction_KOG3433_CHLRE_06g278850v5_KOG4603_CHLRE_06g284400v5CHLREDRAFT_174750_3237a\download.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <img
+                src="/proteins\algae\prediction_KOG3433_CHLRE_06g278850v5_KOG4603_CHLRE_06g284400v5CHLREDRAFT_174750_3237a\predicted_LDDT.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="caption">Top: (KOG3479) TIM9 and (KOG3480) TIM10</p>
+          <p class="caption">
+            Bottom: (KOG3433) CHLRE_06g278850v5 and (KOG4603) CHLRE_06g284400v5
+          </p>
+        </div>
+        <div id="discuss">
+          <h2>Discusion</h2>
+          <p>
+            Looking at the pIDDT and observing the different protein complex models
+            created by AlphaFold are ways to validate the validity of a protein complex. 
+            Protein complexes with too low pIDDTs throughout the sequence are unlikely to 
+            form a complex. An ideal pIDDT curve would be consistently near the top without many or any drops in pIDDT at all.
+            </p>
+            <p>
+            AlphaFold generates 5 models that are based on different training parameters. Similarity between model structures
+            is a good indicator that the protein complex predicted by AlphaFold is likely to be correct, while the opposite is true
+            for models of the same complex that differ more in structure. Another way to differentiate bad models from good models
+            is the presence of disordered regions. Disordered regions may indicate that AlphaFold may not be confident in determining
+            the structure of that region.
+            </p>
+            <div class="figure thinner">
+              <img src="/images/disordered.png" alt="LECA phylogenetic tree" />
+              <p>
+               Example of a protein complex containing disordered regions predicted by AlphaFold (Yeast KOG1092-KOG2806).
+              </p>
+            </div>
+            <p>  
+            All three organisms shown here share the KOG3433-KOG4603 complex. The MND1-HOP2 complex structure has been experimentally determined in Giardia lamblia by x-ray crystallography.
+            Here we can see just by looking at the 3d structures that AlphaFold predicted very similar structures of the KOG3433-KOG4603 complex for the mouse, yeast, and algae species. This signifies
+            that this complex is deeply conserved across different eukaryotes, spanning both unicellular and multicellular organisms, and reflects the importance and ubiquitous nature of the complex.
+            </p>
+            <div class="figure thinner">
+              <img src="/images/mnd1-hop2.png" alt="LECA phylogenetic tree" />
+              <p>
+                Experimentally determined MND1-HOP2 (KOG3433-KOG4603) complex in Giardia lamblia by x-ray crystallography.
+              </p>
+            </div>
+          </p>
+        </div>
+        <div id="arrow-container">
+          <a href="/index.html"><i class="arrow up"></i></a>
+        </div>
+      </div>
+    </body>
+  </main>
+</html>

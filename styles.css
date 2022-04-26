@@ -1,0 +1,259 @@
+/* Transitions */
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Home page */
+
+#main-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+#title {
+  background-color: #c3b1e1;
+  position: relative;
+  border-bottom: 2px white solid;
+  display: flex;
+}
+
+#title h1 {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100%;
+  font-size: 2.25rem;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+#title h3 {
+  color: white;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+#abstract {
+  all: unset;
+  background-color: #fbe7c6;
+}
+
+#introduction {
+  all: unset;
+  background-color: #b4f8c8;
+}
+
+#methods {
+  all: unset;
+  background-color: #a0e7e5;
+}
+
+#results {
+  all: unset;
+  background-color: #ffaebc;
+}
+
+#main-container a {
+  cursor: pointer;
+  border: solid white 2px;
+  position: relative;
+}
+
+#main-container a:hover {
+  transition: 0.5s;
+  filter: brightness(1.1);
+}
+
+h2 {
+  font-family: "Noto Sans", "sans-serif";
+}
+
+#main-container a h2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 2em;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+/* Abstract */
+
+#abstract-background {
+  height: 100vh;
+  width: 100%;
+  background-color: #fbe7c6;
+}
+
+.non-home-back h1 {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+#header-container {
+  height: 50px;
+  width: 70%;
+  margin: auto;
+  border: solid 5px white;
+  border-top: 0px;
+}
+
+#text-content {
+  width: 70%;
+  margin: auto;
+  padding-top: 1%;
+}
+
+#back {
+  margin: auto;
+  width: 0px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 50%;
+  /* Calculates 50% of the element's width, and moves it by that */
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+#arrow-container {
+  width: 0px;
+  margin: auto;
+  margin-top: 50px;
+  height: 75px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+/* Introduction */
+
+#intro-background {
+  height: 100%;
+  width: 100%;
+  background-color: #b4f8c8;
+}
+
+.figure {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+
+.figure p {
+  font-size: 18px;
+}
+
+/* Methods */
+
+#methods-background {
+  height: 100%;
+  width: 100%;
+  background-color: #a0e7e5;
+}
+
+.figure.wider {
+  width: 80%;
+}
+
+/* Results */
+
+#results-background {
+  height: 100%;
+  width: 100%;
+  background-color: #ffaebc;
+}
+
+.protein-results {
+  width: 704px;
+  height: 704px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 25px;
+}
+
+.protein-results video {
+  margin: 0px;
+  width: 350px;
+  height: 350px;
+  border: 2px black solid;
+}
+
+.protein-results img {
+  width: 350px;
+  height: 350px;
+  border: 2px black solid;
+  border-left: 0px;
+  margin: 0px;
+}
+
+#text-content h2{
+  color: white;
+  text-align: center;
+}
+
+p.caption {
+  font-size: 14px;
+}
+
+#discuss {
+  width: 80%;
+  margin-top: 100px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#discuss h2 {
+  text-align: center;
+}
+
+#discuss p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.figure.thinner {
+  width: 40%;
+}
